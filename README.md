@@ -14,6 +14,9 @@ Here I'm demonstrating to host a PHP website using nginx and PHP-FPM containers.
 
 ```
 ## Creating self-signed certificate with OpenSSL
+> Here i'm using a test domain abc.com for crearing the SSL certificate
+
+
 ```bash
 $ openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out nginx-certificate.crt -keyout nginx.key
 Generating a RSA private key
