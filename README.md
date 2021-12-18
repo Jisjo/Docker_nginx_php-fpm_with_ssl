@@ -18,7 +18,7 @@ Here I'm demonstrating to host a PHP website using nginx and PHP-FPM containers.
 
 ### 1. Clone this repository
 ```
-https://github.com/Freeda-F/docker-nginx-php.git
+git clone https://github.com/Jisjo/Docker_nginx_php-fpm_with_ssl.git
 ```
 
 > Currently I have a sample website file and a self-signed certificate.
@@ -57,7 +57,7 @@ Email Address []:
 ```
 ### 2. Switch to the cloned directory
 ```
-cd docker-nginx-php
+cd Docker_nginx_php-fpm_with_ssl
 ```
 ### 3. Start the docker containers using
 ```
