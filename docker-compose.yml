@@ -13,6 +13,8 @@ services:
 
 
   nginx:
+    depends_on:
+      - php-server:
     image: nginx:alpine
     container_name: nginx
     networks:
