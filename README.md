@@ -8,13 +8,29 @@ Here I'm demonstrating to host a PHP website using nginx and PHP-FPM containers.
 
 - **PHP-FPM** : php:7.4-fpm-alpine3.15
 
-## Docker installation
+## Requirements
+- [Install docker](https://docs.docker.com/engine/install/debian/)
+- [Install docker-compose](https://docs.docker.com/compose/install/)
+- your website files
+- SSl certificate
+----
+## Provisioning
 
+### 1. Clone this repository
+```
+https://github.com/Freeda-F/docker-nginx-php.git
 ```
 
-```
-## Creating self-signed certificate with OpenSSL
-> Here i'm using a test domain abc.com for crearing the SSL certificate
+> Currently I have a sample website file and a self-signed certificate.
+> 
+> You can use your website files and keep it under directory *website*.
+> 
+> If you want to follow the self-signed certificate, please follow the below steps.
+
+#### Creating self-signed certificate with OpenSSL
+
+
+> Here I'm using a test domain abc.com for creating the SSL certificate
 
 
 ```bash
@@ -39,6 +55,20 @@ Organizational Unit Name (eg, section) []:
 Common Name (e.g. server FQDN or YOUR name) []:abc.com
 Email Address []:
 ```
+### 2. Switch to the cloned directory
+```
+cd docker-nginx-php
+```
+### 3. Start the docker containers using
+```
+docker-compose up -d
+```
+### 4. To stop and remove the containers, networks or volumes associated with this docker, you can use
+```
+docker-compose down -v
+```
+
+----
 
 ## Docker compose file
 
