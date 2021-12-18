@@ -12,7 +12,7 @@ Here I'm demonstrating to host a PHP website using nginx and PHP-FPM containers.
 - [Install docker](https://docs.docker.com/engine/install/debian/)
 - [Install docker-compose](https://docs.docker.com/compose/install/)
 - your website files
-- SSl certificate
+- SSL certificate
 ----
 ## Provisioning
 
